@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.maskedon.app",
+      "sha256_cert_fingerprints": [
+        "DA:B1:1F:99:D9:FF:00:67:E2:AD:64:23:5D:69:1C:08:05:44:83:EC:43:60:3C:81:B0:7B:D4:F1:A2:C8:1C:33"
+      ]
+    }
+  }
+]

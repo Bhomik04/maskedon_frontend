@@ -1,0 +1,237 @@
+# ======================================================
+# robots.txt — maskedon.com
+# House event discovery & social platform
+# ======================================================
+
+# ── Google ──────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Allow: /favicon-48x48.png
+Allow: /favicon.png
+Allow: /icon-192.png
+Allow: /icon-512.png
+Allow: /logopng.png
+Allow: /symbol.png
+Allow: /manifest.webmanifest
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /settings
+Disallow: /onboarding
+Disallow: /my-requests
+Disallow: /my-ratings
+Disallow: /payment-history
+Disallow: /blocked-users
+Disallow: /notifications
+Disallow: /create-post
+Disallow: /events/create
+Disallow: /post
+Disallow: /friends
+Disallow: /profile/me
+Disallow: /profile/me/photos
+
+User-agent: Googlebot-Image
+Allow: /
+
+# ── Bing ────────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Allow: /favicon-48x48.png
+Allow: /favicon.png
+Allow: /icon-192.png
+Allow: /icon-512.png
+Allow: /logopng.png
+Allow: /symbol.png
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /settings
+Disallow: /onboarding
+Disallow: /my-requests
+Disallow: /my-ratings
+Disallow: /payment-history
+Disallow: /blocked-users
+Disallow: /notifications
+Disallow: /create-post
+Disallow: /events/create
+Disallow: /post
+Disallow: /friends
+Disallow: /profile/me
+Disallow: /profile/me/photos
+
+# ── Apple ───────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /settings
+Disallow: /onboarding
+Disallow: /my-requests
+Disallow: /my-ratings
+Disallow: /payment-history
+Disallow: /blocked-users
+Disallow: /notifications
+Disallow: /create-post
+Disallow: /events/create
+Disallow: /post
+Disallow: /friends
+Disallow: /profile/me
+Disallow: /profile/me/photos
+
+# ── Social Media Crawlers ───────────────────────────
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# ── AI / LLM Crawlers ───────────────────────────────
+# OpenAI GPTBot
+User-agent: GPTBot
+Allow: /
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /settings
+Disallow: /onboarding
+Disallow: /my-requests
+Disallow: /my-ratings
+Disallow: /payment-history
+Disallow: /blocked-users
+Disallow: /notifications
+Disallow: /create-post
+Disallow: /events/create
+Disallow: /post
+Disallow: /friends
+Disallow: /profile/me
+Disallow: /profile/me/photos
+
+# Anthropic Claude
+User-agent: Claude-Web
+Allow: /
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /settings
+Disallow: /onboarding
+Disallow: /my-requests
+Disallow: /my-ratings
+Disallow: /payment-history
+Disallow: /blocked-users
+Disallow: /notifications
+Disallow: /create-post
+Disallow: /events/create
+Disallow: /post
+Disallow: /friends
+Disallow: /profile/me
+Disallow: /profile/me/photos
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /settings
+Disallow: /onboarding
+Disallow: /my-requests
+Disallow: /my-ratings
+Disallow: /payment-history
+Disallow: /blocked-users
+Disallow: /notifications
+Disallow: /create-post
+Disallow: /events/create
+Disallow: /post
+Disallow: /friends
+Disallow: /profile/me
+Disallow: /profile/me/photos
+
+# Google Gemini / Bard
+User-agent: Google-Extended
+Allow: /
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /settings
+Disallow: /onboarding
+Disallow: /my-requests
+Disallow: /my-ratings
+Disallow: /payment-history
+Disallow: /blocked-users
+Disallow: /notifications
+Disallow: /create-post
+Disallow: /events/create
+Disallow: /post
+Disallow: /friends
+Disallow: /profile/me
+Disallow: /profile/me/photos
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /settings
+Disallow: /onboarding
+Disallow: /my-requests
+Disallow: /my-ratings
+Disallow: /payment-history
+Disallow: /blocked-users
+Disallow: /notifications
+Disallow: /create-post
+Disallow: /events/create
+Disallow: /post
+Disallow: /friends
+Disallow: /profile/me
+Disallow: /profile/me/photos
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /settings
+Disallow: /onboarding
+Disallow: /my-requests
+Disallow: /my-ratings
+Disallow: /payment-history
+Disallow: /blocked-users
+Disallow: /notifications
+Disallow: /create-post
+Disallow: /events/create
+Disallow: /post
+Disallow: /friends
+Disallow: /profile/me
+Disallow: /profile/me/photos
+
+# Common Web Scrapers / Research Bots
+User-agent: CCBot
+Disallow: /
+
+User-agent: ia_archiver
+Allow: /
+
+# ── Default: Allow all other bots ───────────────────
+User-agent: *
+Allow: /
+Allow: /favicon-48x48.png
+Allow: /favicon.png
+Allow: /icon-192.png
+Allow: /icon-512.png
+Allow: /logopng.png
+Allow: /symbol.png
+Allow: /manifest.webmanifest
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /settings
+Disallow: /onboarding
+Disallow: /my-requests
+Disallow: /my-ratings
+Disallow: /payment-history
+Disallow: /blocked-users
+Disallow: /notifications
+Disallow: /create-post
+Disallow: /events/create
+Disallow: /post
+Disallow: /friends
+Disallow: /profile/me
+Disallow: /profile/me/photos
+
+# ── Sitemaps ─────────────────────────────────────────
+Sitemap: https://maskedon.com/sitemap.xml

@@ -1,0 +1,151 @@
+{
+  "hash": "6ac8b75c",
+  "configHash": "f520c081",
+  "lockfileHash": "a8331468",
+  "browserHash": "815ffc07",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "5ca1d5a0",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "ba6a0dda",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "eecb217e",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "7366520d",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "0a050f93",
+      "needsInterop": false
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "1113554b",
+      "needsInterop": false
+    },
+    "@capacitor/core": {
+      "src": "../../node_modules/@capacitor/core/dist/index.js",
+      "file": "@capacitor_core.js",
+      "fileHash": "590e8eeb",
+      "needsInterop": false
+    },
+    "@capacitor/app": {
+      "src": "../../node_modules/@capacitor/app/dist/esm/index.js",
+      "file": "@capacitor_app.js",
+      "fileHash": "61b4127c",
+      "needsInterop": false
+    },
+    "@capacitor/status-bar": {
+      "src": "../../node_modules/@capacitor/status-bar/dist/esm/index.js",
+      "file": "@capacitor_status-bar.js",
+      "fileHash": "8c40044b",
+      "needsInterop": false
+    },
+    "@capacitor/splash-screen": {
+      "src": "../../node_modules/@capacitor/splash-screen/dist/esm/index.js",
+      "file": "@capacitor_splash-screen.js",
+      "fileHash": "f2b66ba2",
+      "needsInterop": false
+    },
+    "@capacitor/keyboard": {
+      "src": "../../node_modules/@capacitor/keyboard/dist/esm/index.js",
+      "file": "@capacitor_keyboard.js",
+      "fileHash": "20575b11",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "0dc83059",
+      "needsInterop": false
+    },
+    "@capacitor/push-notifications": {
+      "src": "../../node_modules/@capacitor/push-notifications/dist/esm/index.js",
+      "file": "@capacitor_push-notifications.js",
+      "fileHash": "133ec208",
+      "needsInterop": false
+    },
+    "socket.io-client": {
+      "src": "../../node_modules/socket.io-client/build/esm/index.js",
+      "file": "socket__io-client.js",
+      "fileHash": "ba8d5eb8",
+      "needsInterop": false
+    },
+    "@capacitor/share": {
+      "src": "../../node_modules/@capacitor/share/dist/esm/index.js",
+      "file": "@capacitor_share.js",
+      "fileHash": "1ca98da1",
+      "needsInterop": false
+    },
+    "@capacitor/camera": {
+      "src": "../../node_modules/@capacitor/camera/dist/esm/index.js",
+      "file": "@capacitor_camera.js",
+      "fileHash": "12989202",
+      "needsInterop": false
+    },
+    "browser-image-compression": {
+      "src": "../../node_modules/browser-image-compression/dist/browser-image-compression.mjs",
+      "file": "browser-image-compression.js",
+      "fileHash": "d4b03002",
+      "needsInterop": false
+    },
+    "@capacitor/haptics": {
+      "src": "../../node_modules/@capacitor/haptics/dist/esm/index.js",
+      "file": "@capacitor_haptics.js",
+      "fileHash": "409d57f0",
+      "needsInterop": false
+    },
+    "leaflet": {
+      "src": "../../node_modules/leaflet/dist/leaflet-src.js",
+      "file": "leaflet.js",
+      "fileHash": "07c1bc93",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-EUWUKHZ5": {
+      "file": "chunk-EUWUKHZ5.js"
+    },
+    "web-UUSVHJTU": {
+      "file": "web-UUSVHJTU.js"
+    },
+    "web-EMBEIXK2": {
+      "file": "web-EMBEIXK2.js"
+    },
+    "web-WVDZMPFE": {
+      "file": "web-WVDZMPFE.js"
+    },
+    "web-4YE6AOW4": {
+      "file": "web-4YE6AOW4.js"
+    },
+    "chunk-PTTAE5O2": {
+      "file": "chunk-PTTAE5O2.js"
+    },
+    "chunk-5C6DFZPZ": {
+      "file": "chunk-5C6DFZPZ.js"
+    },
+    "chunk-PT3A4N6G": {
+      "file": "chunk-PT3A4N6G.js"
+    },
+    "chunk-PR4QN5HX": {
+      "file": "chunk-PR4QN5HX.js"
+    }
+  }
+}
