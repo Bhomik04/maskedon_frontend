@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- ═══════════════════════════════════════════════
+         VIEWPORT & THEME
+    ════════════════════════════════════════════════ -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#080c15" />
+
+  <!-- ═══════════════════════════════════════════════
+         ICONS & PWA MANIFEST
+    ════════════════════════════════════════════════ -->
+  <link rel="icon" type="image/png" sizes="48x48" href="/maskedon_frontend/favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/maskedon_frontend/favicon.png" />
+  <link rel="shortcut icon" href="/maskedon_frontend/favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/maskedon_frontend/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/maskedon_frontend/icon-192.png" />
+  <link rel="manifest" href="/maskedon_frontend/manifest.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="MaskedOn" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="MaskedOn" />
+
+  <!-- ═══════════════════════════════════════════════
+         PRIMARY SEO
+    ════════════════════════════════════════════════ -->
+  <title>MaskedOn — Discover Curated Events Near You</title>
+  <meta name="description"
+    content="MaskedOn is a trust-based event discovery platform. Host private events, discover curated experiences in your city, build your social reputation, and connect with like-minded people." />
+  <meta name="keywords"
+    content="event discovery, private events, social platform, events app, curated events, social rating, meetup app, maskedon, masked on" />
+  <meta name="author" content="MaskedOn" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://maskedon.com/" />
+
+  <!-- ═══════════════════════════════════════════════
+         GOOGLE SEARCH CONSOLE VERIFICATION
+         Replace the content value with your actual
+         verification token from Google Search Console
+         → Settings → Ownership verification → HTML tag
+    ════════════════════════════════════════════════ -->
+  <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_TOKEN_HERE" /> -->
+
+  <!-- ═══════════════════════════════════════════════
+         OPEN GRAPH (Facebook, WhatsApp, LinkedIn)
+    ════════════════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MaskedOn" />
+  <meta property="og:title" content="MaskedOn — Discover Curated Events Near You" />
+  <meta property="og:description"
+    content="Host private events, discover curated experiences in your city, rate fellow attendees, and build your social reputation. The trust-based events platform." />
+  <meta property="og:url" content="https://maskedon.com/" />
+  <meta property="og:image" content="https://maskedon.com/icon-512.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:image:alt" content="MaskedOn logo — curated event discovery platform" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ═══════════════════════════════════════════════
+         TWITTER / X CARD
+    ════════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@maskedonapp" />
+  <meta name="twitter:title" content="MaskedOn — Discover Curated Events Near You" />
+  <meta name="twitter:description"
+    content="Host private events, discover curated experiences in your city, and build your social reputation. The trust-based events platform." />
+  <meta name="twitter:image" content="https://maskedon.com/icon-512.png" />
+  <meta name="twitter:image:alt" content="MaskedOn — event discovery platform" />
+
+  <!-- ═══════════════════════════════════════════════
+         GEO TARGETING (helps with local/city SEO)
+    ════════════════════════════════════════════════ -->
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="India" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  <!-- ═══════════════════════════════════════════════
+         JSON-LD STRUCTURED DATA
+    ════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://maskedon.com/#website",
+          "url": "https://maskedon.com/",
+          "name": "MaskedOn",
+          "description": "Trust-based event discovery and social platform",
+          "inLanguage": "en-US",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://maskedon.com/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "MobileApplication",
+          "@id": "https://maskedon.com/#app",
+          "name": "MaskedOn",
+          "description": "Discover curated events near you. Host private experiences, manage guest lists with a trust-based social rating system.",
+          "url": "https://maskedon.com/",
+          "applicationCategory": "SocialNetworkingApplication",
+          "operatingSystem": "Android, iOS, Web",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "featureList": [
+            "Event discovery by city",
+            "Host-controlled guest approval",
+            "Social reputation rating system",
+            "Photo sharing with event galleries",
+            "Friends system with mutual friends",
+            "Real-time in-app notifications",
+            "Digital event tickets"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://maskedon.com/#organization",
+          "name": "MaskedOn",
+          "url": "https://maskedon.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://maskedon.com/icon-512.png",
+            "width": 512,
+            "height": 512
+          },
+          "sameAs": [],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://maskedon.com/contact"
+          }
+        }
+      ]
+    }
+    </script>
+
+  <!-- ═══════════════════════════════════════════════
+         SPA ROUTING RESTORE (GitHub Pages)
+    ════════════════════════════════════════════════ -->
+  <script>
+    // GitHub Pages SPA — restore path encoded by 404.html
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&');
+        }).join('?');
+        window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+      }
+    }(window.location));
+  </script>
+  <script type="module" crossorigin src="/maskedon_frontend/assets/index-DcnmHo-9.js"></script>
+  <link rel="stylesheet" crossorigin href="/maskedon_frontend/assets/index-ByD6Wh32.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

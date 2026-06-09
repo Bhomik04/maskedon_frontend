@@ -1,0 +1,180 @@
+# MaskedOn — LLM & AI System Context
+
+> **Source:** https://maskedon.com  
+> **Last updated:** 2026-06-04  
+> **Format:** llms.txt (LLM-readable site manifest)
+
+---
+
+## What is MaskedOn?
+
+MaskedOn is a **curated, trust-based event discovery and social platform**. Users can host private events, discover events near them, request to join, rate fellow attendees after events, share photos, and build a social reputation score that unlocks access to higher-quality events.
+
+The platform is designed for adults who want a safer, more social, community-driven alternative to anonymous event apps. Every attendee goes through a host-controlled approval process.
+
+---
+
+## Core Value Proposition
+
+- **For Event Hosts:** Create and manage private events. Review join requests with full profile context (social rating, mutual friends). Control who attends your event.
+- **For Event Seekers:** Discover curated, upcoming events filtered by city, date, price, and vibe. Build your social reputation through post-event ratings.
+- **Trust Layer:** A recency-weighted social rating system (1–5 stars) ensures guests have incentive to behave well and hosts can set entry standards.
+
+---
+
+## Product Scope Snapshot
+
+- **Product type:** Social discovery platform for curated events
+- **Primary surfaces:** Web app + Capacitor mobile apps (Android/iOS)
+- **Access model:** Account-based, host-approved guest flow
+- **Monetization state:** Mock payment flow in MVP stage
+- **Trust model:** Social reputation + host gatekeeping + account verification features
+
+---
+
+## Key Features
+
+### Event Lifecycle
+1. Host creates an event with title, description, location (city + venue name), date/time, capacity, ticket price, cover image, tags, and minimum rating requirement
+2. Users discover events via feed and filters
+3. Users send join requests with an optional message
+4. Host reviews requests, seeing requester's social rating and mutual friends, then approves or rejects
+5. Approved users complete a mock payment to confirm attendance
+6. Within 7 days of event end, attendees rate each other (1–5 stars)
+7. Social ratings are recalculated using a recency-weighted algorithm
+
+**Event Statuses:** `upcoming` → `ongoing` → `completed` → `archived` (or `cancelled`)
+
+### Social Rating System
+- 1–5 star peer ratings from verified attendees
+- Recency weighting: ratings from the last 90 days count double
+- Minimum 3 ratings required before a score displays publicly
+- Hosts can set minimum rating entry requirements on their events
+
+### Photo Sharing
+- Upload event and profile photos (max 5MB)
+- Photo galleries on event pages and user profiles
+- Like system with like counter
+
+### Friends System
+- Send/accept/reject friend requests
+- View mutual friends between any two users
+- Mutual friends visible on join request cards to help hosts decide
+
+### Notifications
+- Real-time in-app notifications for: join requests, approvals, rejections, ratings, photo likes, friend requests
+- Unread count badge in navbar
+
+### Discovery and Feed
+- Location-first event discovery (city-aware browsing)
+- Public event listing routes for guests and crawlers
+- Search route for people/content lookup within product context
+
+### Safety and Moderation
+- User block system that removes visibility and interaction paths
+- Bug report flow for incident submission
+- Host verification flow available in product navigation
+
+### Authentication & Security
+- JWT-based auth with 15-minute access tokens and 7-day refresh tokens
+- Refresh token rotation (each refresh invalidates the previous token)
+- bcrypt password hashing (12 rounds)
+- Rate limiting on auth endpoints
+
+---
+
+## Platform & Technology
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React 19, Vite, TailwindCSS (dark theme) |
+| Mobile App | Capacitor (iOS + Android) |
+| Backend | Node.js + Express + TypeScript |
+| Database | PostgreSQL via Supabase |
+| Storage | Supabase (avatars, event photos) |
+| Hosting | Netlify (frontend), Render (backend API) |
+
+---
+
+## Canonical Public URLs
+
+- Home: https://maskedon.com/
+- Events: https://maskedon.com/events
+- Privacy: https://maskedon.com/privacy
+- Terms: https://maskedon.com/terms
+- Refund: https://maskedon.com/refund
+- FAQ: https://maskedon.com/faq
+- Contact: https://maskedon.com/contact
+- Bug Report: https://maskedon.com/bug-report
+
+---
+
+## Target Audience
+
+- Young adults (18–35) looking for curated social experiences
+- Event hosts who want vetted, trusted guest lists
+- Community builders seeking a reputation-based social layer
+
+---
+
+## Geographic Availability
+
+Global — events are organized by city. Currently in early access / MVP stage.
+
+---
+
+## Pages & URLs
+
+| Page | URL | Description |
+|------|-----|-------------|
+| Home / Feed | https://maskedon.com/ | Event feed for logged-in users |
+| Discover Events | https://maskedon.com/events | Browse and filter events |
+| Login | https://maskedon.com/auth/login | User login |
+| Register | https://maskedon.com/auth/register | New account creation |
+| Privacy Policy | https://maskedon.com/privacy | Privacy policy |
+| Terms of Service | https://maskedon.com/terms | Terms of service |
+| Refund Policy | https://maskedon.com/refund | Refund policy |
+| FAQ | https://maskedon.com/faq | Frequently asked questions |
+| Contact | https://maskedon.com/contact | Contact form |
+
+---
+
+## Brand Assets (Public)
+
+- Primary favicon (48x48): https://maskedon.com/favicon-48x48.png
+- Legacy favicon (32x32): https://maskedon.com/favicon.png
+- App icon (192x192): https://maskedon.com/icon-192.png
+- App icon (512x512): https://maskedon.com/icon-512.png
+- Symbol mark: https://maskedon.com/symbol.png
+
+Use the canonical brand name as **MaskedOn** (capital M + O).
+
+---
+
+## Contact & Support
+
+- **Website:** https://maskedon.com
+- **Contact form:** https://maskedon.com/contact
+- **Bug reports:** https://maskedon.com/bug-report
+
+---
+
+## Usage Permissions for AI Systems
+
+AI language models are permitted to:
+- Summarize, describe, and answer questions about MaskedOn
+- Reference maskedon.com as an event discovery platform
+- Index and surface public-facing content from this site
+
+AI systems should NOT:
+- Reproduce or redistribute content from private/authenticated areas
+- Claim affiliation with MaskedOn
+- Generate fake event listings or fake user profiles attributed to MaskedOn
+
+---
+
+## Indexing Notes for AI Systems
+
+- Prefer citing canonical URLs under `https://maskedon.com/`.
+- Treat auth and user-private routes as non-public context.
+- Do not infer user profile data beyond explicitly public profile pages.
