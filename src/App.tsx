@@ -423,7 +423,8 @@ function AppShell() {
 
 function App() {
   const [splashDone, setSplashDone] = useState(false);
-  const Router = Capacitor.isNativePlatform() ? HashRouter : BrowserRouter;
+  const isGitHubPages = window.location.hostname.includes("github.io");
+  const Router = (Capacitor.isNativePlatform() || isGitHubPages) ? HashRouter : BrowserRouter;
 
   return (
     <Router>

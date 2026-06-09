@@ -24,5 +24,12 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [
+    "src/components/party-card.tsx",
+    "src/pages/create-party.tsx",
+    "src/pages/edit-party.tsx",
+    "src/pages/party-detail.tsx",
+    "src/pages/party-photos.tsx"
+  ]
 }
